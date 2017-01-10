@@ -22,14 +22,14 @@ Dries Verachtert <dries.verachtert@dries.eu>
     $scope.nonEmptyDishesList = [];
     
     $scope.checkIfTooMuch = function() {
+      scope.emptyDishesRemovedMessage = "";
+
       if ($scope.dishesList == "") {
 	$scope.message = "Please enter data first";
 	$scope.messageClass = "redMessage";
 	$scope.dishesListClass = "inputRedBorder";
-
       } else {
 	$scope.nonEmptyDishesList = [];
-	$scope.emptyDishesRemovedMessage = "";
 	var splittedList = $scope.dishesList.split(',');
 	for (var i = 0; i < splittedList.length; i++) {
 	    if (splittedList[i].trim() != "") {

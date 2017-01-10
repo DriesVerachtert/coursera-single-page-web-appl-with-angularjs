@@ -1,5 +1,14 @@
 (function() {
   'use strict';
+
+/*
+Solution for assignment 1 of the course 'Single Page Web Applications with AngularJS' on Coursera.
+
+Assignment: https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/assignments/assignment2
+Course: https://www.coursera.org/learn/single-page-web-apps-with-angularjs/
+
+Dries Verachtert <dries.verachtert@dries.eu>
+*/
   
   angular.module('LunchCheck', [])
   .controller('LunchCheckController', LunchCheckController);

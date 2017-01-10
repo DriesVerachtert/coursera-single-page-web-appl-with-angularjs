@@ -22,7 +22,7 @@ Dries Verachtert <dries.verachtert@dries.eu>
     $scope.nonEmptyDishesList = [];
     
     $scope.checkIfTooMuch = function() {
-      scope.emptyDishesRemovedMessage = "";
+      $scope.emptyDishesRemovedMessage = "";
 
       if ($scope.dishesList == "") {
 	$scope.message = "Please enter data first";
